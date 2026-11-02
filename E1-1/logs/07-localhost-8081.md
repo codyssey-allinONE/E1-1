@@ -24,3 +24,6 @@ $ curl -s http://localhost:8081
 
 브라우저에서 `http://localhost:8081`을 열었을 때 페이지 제목은 "E1-1 작업실"이고, 본문은 "E1-1 컨테이너 웹 서버"다. 캡처: [localhost-8081-page.jpg](../screenshots/localhost-8081-page.jpg)
 
+
+## 4. 주소창 포함 화면 (사용자 캡처)
+주소창에 `localhost:8081`이 보이고, 같은 화면에 "E1-1 컨테이너 웹 서버" 응답이 나온다. 캡처: [localhost-8081-address-bar.png](../screenshots/localhost-8081-address-bar.png)
