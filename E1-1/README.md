@@ -23,7 +23,7 @@
 - [x] 포트 매핑 접속 2회 (8080, 8081, curl 응답) → [로그](logs/03-image-port-mount-volume.txt), 8절
 - [x] 바인드 마운트 (호스트 변경 전/후) → 8절
 - [x] 볼륨 영속성 (컨테이너 삭제 전/후) → 8절
-- [ ] VSCode GitHub 연동 증거 (직접 로그인 후 스크린샷 첨부 필요)
+- [x] VSCode GitHub 연동 증거 → [logs/06-vscode-github.md](logs/06-vscode-github.md), 캡처 [screenshots/](screenshots/)
 - [x] 트러블슈팅 2건 이상 (3건 기록) → 6절
 - [x] 민감정보 마스킹 (이메일 일부 마스킹)
 
@@ -122,3 +122,8 @@ $ curl -s http://localhost:8081   → 동일
 - 원격 주소를 HTTPS에서 SSH(`git@github.com:...`)로 바꾸고 SSH로 푸시한다.
 - 차이: HTTPS는 토큰으로 인증하고, SSH는 개인키로 인증하므로 토큰 유출 위험이 줄어든다.
 - 트러블슈팅: `gh ssh-key add`가 `admin:public_key` 권한 부족으로 404가 났다. `gh auth refresh -h github.com -s admin:public_key`로 권한을 추가한 뒤 등록에 성공했다.
+
+## 11) VSCode GitHub 연동 증거 (원본: [logs/06-vscode-github.md](logs/06-vscode-github.md))
+- VSCode에서 `linkcontent7-huisun (GitHub)` 계정으로 로그인했다. 캡처: [screenshots/vscode-github-account-menu.png](screenshots/vscode-github-account-menu.png)
+- `AllinONE` 폴더를 VSCode로 열고 터미널에서 `git remote -v`를 실행했다. 원격 주소는 `git@github.com:linkcontent7-huisun/AllinONE.git`이다. 캡처: [screenshots/vscode-git-remote-terminal.png](screenshots/vscode-git-remote-terminal.png)
+- 브랜치는 `main`이다.
