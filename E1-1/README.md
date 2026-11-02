@@ -127,3 +127,8 @@ $ curl -s http://localhost:8081   → 동일
 - VSCode에서 `linkcontent7-huisun (GitHub)` 계정으로 로그인했다. 캡처: [screenshots/vscode-github-account-menu.png](screenshots/vscode-github-account-menu.png)
 - `AllinONE` 폴더를 VSCode로 열고 터미널에서 `git remote -v`를 실행했다. 원격 주소는 `git@github.com:linkcontent7-huisun/AllinONE.git`이다. 캡처: [screenshots/vscode-git-remote-terminal.png](screenshots/vscode-git-remote-terminal.png)
 - 브랜치는 `main`이다.
+
+## 12) 웹 서버 접속 증거 — localhost:8081 (원본: [logs/07-localhost-8081.md](logs/07-localhost-8081.md))
+- 컨테이너 `web-8081`(이미지 `e1-1-web:1.0`)을 `-p 8081:80`으로 실행했다.
+- 주소창 포함 캡처: [screenshots/localhost-8081-address-bar.png](screenshots/localhost-8081-address-bar.png)
+- 응답 확인(`curl`) 결과도 같은 로그 파일에 있다.
